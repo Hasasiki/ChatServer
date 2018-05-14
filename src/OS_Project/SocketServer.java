@@ -7,6 +7,17 @@ import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 
+/*一、搭建服务器端
+
+a)、创建ServerSocket对象绑定监听端口。
+
+b)、通过accept()方法监听客户端的请求。
+
+c)、建立连接后，通过输入输出流读取客户端发送的请求信息。
+
+d)、通过输出流向客户端发送请求信息。
+
+e)、关闭相关资源。*/
 public class SocketServer {
 	//搭建服务器端
 	public static void main(String[] args) throws IOException {
@@ -21,7 +32,7 @@ public class SocketServer {
 		try {
 			ServerSocket server = null;
 			try {
-				server = new ServerSocket(5303);
+				server = new ServerSocket(5209);
 				//指定绑定的端口并监听此端口
 				System.out.println("Server start!");
 				//
